@@ -32,10 +32,12 @@
                 <label for="country">Type</label>
                 <select class="custom-select d-block w-100" id="country" required>
                     <option value="">Choose...</option>
-                    <option>idk</option>
-                    <option>idk2</option>
-                    <option>idk3</option>
-                    <option>idk4</option>
+                    <option>Consulta alto nivel mal hecha 1</option>
+                    <option>Consulta alto nivel mal hecha 2</option>
+                    <option>Consulta alto nivel mal hecha 3</option>
+                    <option>Consulta alto nivel bien hecha 1</option>
+                    <option>Consulta alto nivel bien hecha 2</option>
+                    <option>Consulta alto nivel bien hecha 3</option>
                 </select>
                 <div class="invalid-feedback">
                     Please select a valid type.
@@ -45,22 +47,23 @@
                 <label for="state">Time Frequency</label>
                 <select class="custom-select d-block w-100" id="state" required>
                     <option value="">Choose...</option>
-                    <option>1s</option>
-                    <option>15s</option>
-                    <option>30s</option>
-                    <option>60s</option>
+                    <option value="1">1s</option>
+                    <option value="15">15s</option>
+                    <option value="30">30s</option>
+                    <option value="45">45s</option>
+                    <option value="60">60s</option>
                 </select>
                 <div class="invalid-feedback">
-                    Please provide a valid state.
+                    Please provide a valid time.
                 </div>
                 <small class="text-muted">Time are in seconds</small>
             </div>
             <div class="col-md-3 mb-3">
-            <label for="zip">Number of </label>
-            <input type="text" class="form-control" id="zip" placeholder="" required>
-            <div class="invalid-feedback">
-                Zip code required.
-            </div>
+                <label for="zip">Number of </label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                    A number is required.
+                </div>
             </div>
         </div>
 
@@ -70,13 +73,13 @@
             <label for="state">Server</label>
             <select class="custom-select d-block w-100" id="state" required>
                 <option value="">Choose...</option>
-                <option>Central</option>
-                <option>Node 1</option>
-                <option>Node 2</option>
-                <option>Node # etc</option>
+                <option>Central Sql Server</option>
+                <option>San Jose Node Server</option>
+                <option>Cartago Node Server</option>
+                <option>Alajuela Node Server</option>
             </select>
             <div class="invalid-feedback">
-                Please provide a valid state.
+                Please provide a valid server.
             </div>
             <small class="text-muted">Server to do the Test</small>
         </div>

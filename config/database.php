@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => 'CentralSqlServer',
 
     /*
     |--------------------------------------------------------------------------
@@ -33,51 +33,55 @@ return [
 
     'connections' => [
 
-        'sqlite' => [
-            'driver' => 'sqlite',
-            'database' => env('DB_DATABASE', database_path('database.sqlite')),
-            'prefix' => '',
-        ],
-
-        'mysql' => [
-            'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-        ],
-
-        'pgsql' => [
+        'SanJoseNodeServer' => [
             'driver' => 'pgsql',
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => 'sjnodepostgresql.cz7ejndbdusl.us-east-2.rds.amazonaws.com',
+            'port' => '5432',
+            'database' => 'SJNode',
+            'username' => 'DB_USERNAME',
+            'password' => 'S3cuR3P4ss',
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
 
-        'sqlsrv' => [
+        'CartagoNodeServer' => [
+            'driver' => 'pgsql',
+            'host' => 'cartnodepostgresql.cg9y7qwclzw7.us-west-1.rds.amazonaws.com',
+            'port' => '5432',
+            'database' => 'CartNode',
+            'username' => 'CartNodeUser',
+            'password' => 'S3cuR3P4ss',
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
+            'sslmode' => 'prefer',
+        ],
+
+        'AlajuelaNodeServer' => [
+            'driver' => 'pgsql',
+            'host' => 'alajnodepostgresql.cyo0q89vgwxi.us-west-2.rds.amazonaws.com',
+            'port' => '5432',
+            'database' => 'AlajNode',
+            'username' => 'AlajNodeUser',
+            'password' => 'S3cuR3P4ss',
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
+            'sslmode' => 'prefer',
+        ],
+
+        'CentralSqlServer' => [
             'driver' => 'sqlsrv',
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => 'centralsqlserver.c9i1fbdkiazq.us-east-1.rds.amazonaws.com',
+            'port' => '1433',
+            'database' => 'centralsqlserver',
+            'username' => 'CentralSqlUser',
+            'password' => 'S3cuR3P4ss',
             'charset' => 'utf8',
             'prefix' => '',
         ],
-
     ],
 
     /*
