@@ -10,5 +10,7 @@ class ClientController extends Controller
         return view('client_form');
     }
 
-    
+    public function testkezo() {
+        return view('statistics');
+    }
 }

@@ -1,0 +1,7 @@
+div.rect{
+    width: 100%;
+    border: outset 2px ;
+    background: white;
+    color: black;
+    align-content: left;
+}

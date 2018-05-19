@@ -15,13 +15,15 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/cover.css') }}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">
   </head>
 
   <body class="text-center">
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       @include('menu')
-
+      
       <main role="main" class="inner cover">
         @yield('content')
       </main>
@@ -37,6 +39,9 @@
     <!--script>window.jQuery || document.write('<script-- src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--scripts de kezito -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="{{ asset('js/others.js') }}"></script>
   </body>
 </html>
 

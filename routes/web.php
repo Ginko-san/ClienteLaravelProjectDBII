@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'ClientController@index')->name('home');
+Route::get('/testkezo', 'ClientController@testkezo')->name('testkezo');
